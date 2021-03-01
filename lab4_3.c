@@ -4,7 +4,7 @@ int main()
 {
     int i,j=1,k;
     char letter[201],tmp[201];
-    scanf("%s",&letter);
+    scanf("%s",letter);
     tmp[0]=letter[0];
     for(i=0;i<strlen(letter);i++)
     {
