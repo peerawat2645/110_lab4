@@ -5,13 +5,13 @@ int main(){
     int i,j=0,k=0;
     char s[1000],check[11][5]= {"i","of","the","on","at","for","with","a","an","in","and"};
     char *token;
-    scanf("%[^\n]s",s);
+    gets(s);
     token = strtok(s," ");
     while(token != NULL){
-        /*for(i=0;i<10; i++)
+        for(i=0;i<10; i++)
             if(strcmp(token,check[i]))
-                j++;*/
-        if(k==0)
+                j++;
+        if(j==10||k==0)
             printf("%c",toupper(token[0]));
         j=0,k++;
         token = strtok(NULL," ");
